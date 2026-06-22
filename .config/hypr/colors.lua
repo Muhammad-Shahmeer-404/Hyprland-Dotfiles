@@ -1,5 +1,5 @@
 return {
-    image = "/home/shahmeer/.config/hypr/wallpapers/wallpaper7.jpg",
+    image = "/home/shahmeer/.dotfiles/.config/hypr/wallpapers/wallpaper7.jpg",
 
     background = "0xff111417",
 
