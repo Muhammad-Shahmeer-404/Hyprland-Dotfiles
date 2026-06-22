@@ -1,0 +1,173 @@
+@import "colors.css";
+
+*
+{
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+.control-center
+{
+  opacity: 1;
+  background: alpha(@on_secondary, .8);
+  border: 2px solid @primary;
+}
+
+.close-button {
+  /* The notification Close Button */
+  background: @on_background;
+  color: @on_secondary;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 100%;
+  margin-top: 8px;
+  margin-right: 8px;
+  box-shadow: none;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+
+.notification:hover .close-button {
+  opacity: 1;
+}
+
+.close-button:hover {
+  color: @error_container;
+  box-shadow: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.notification
+{
+  border-radius: 7px ;
+  border: 2px solid @on_primary_fixed_variant;
+  margin: 3px 2px 3px 0;
+  background: @on_secondary;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  color: @on_secondary;
+  background: @on_secondary_fixed_variant;
+  border-radius: 7px ;
+}
+
+.notification-group {
+  background-color: transparent;
+  outline: none;
+}
+
+.notification-row
+{
+  outline: none;
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.notification-content 
+{
+  background: alpha(@on_secondary, .8);
+}
+
+
+.time {
+  background: transparent;
+  color: @primary;
+  text-shadow: none;
+  margin-right: 30px;
+}
+
+.summary {
+  font-size: 18px;
+  font-weight: bold;
+  background: transparent;
+  color: @primary;
+  text-shadow: none;
+}
+
+.body
+{
+  font-size: 16px;
+  background: transparent;
+  color: @primary_fixed;
+  text-shadow: none;
+}
+
+.widget-title
+{
+  color: @primary;
+  font-weight: bold;
+}
+
+.widget-title>button
+{
+  background: @on_secondary_fixed_variant;
+  color: @primary;
+}
+
+.widget-title>button:hover
+{
+  color: @on_secondary_fixed_variant;
+  background: @primary;
+  
+}
+
+.widget-dnd
+{
+  background: transparent;
+  font-size: 1.2rem;
+}
+
+.widget-dnd>switch
+{
+  min-width: 50px;
+  border-radius: 7px;
+}
+
+.widget-dnd>switch:checked
+{
+  background: @on_primary_fixed_variant;
+}
+
+.widget-dnd>switch slider
+{
+  border-radius: 5px;
+}
+
+
+.widget-dnd>switch:checked slider
+{
+  background: @primary;
+  border-radius: 5px;
+}
+
+
+
+.widget-mpris {
+  color: @primary;
+  background: transparent;
+  margin: 0px 10px 10px 10px;
+  box-shadow: none;
+}
+
+.widget-mpris-player
+{
+  border: 2px solid @secondary;
+  border-radius: 5px;
+}
+
+.widget-mpris-album-art
+{
+  border-radius: 5px;
+}
+
+.widget-mpris>box>button,
+.widget-mpris-player,
+.widget-mpris-album-art 
+{
+  box-shadow: none;
+  margin: 10px;
+}
