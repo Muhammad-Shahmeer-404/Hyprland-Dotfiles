@@ -17,12 +17,12 @@ If you wish to learn more about this I recommend you offical repo for [Matugen](
 
 <table>
   <tr>
-    <td width="50%"><img src="assets/images/screenshots11.png" alt="Dynamic themed desktop preview 1"></td>
-    <td width="50%"><img src="assets/images/screenshots12.png" alt="Dynamic themed desktop preview 2"></td>
+    <td width="50%"><img src="assets/images/screenshot11.png" alt="Dynamic themed desktop preview 1"></td>
+    <td width="50%"><img src="assets/images/screenshot12.png" alt="Dynamic themed desktop preview 2"></td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/images/screenshots13.png" alt="Dynamic themed desktop preview 3"></td>
-    <td width="50%"><img src="assets/images/screenshots14.png" alt="Dynamic themed desktop preview 4"></td>
+    <td width="50%"><img src="assets/images/screenshot13.png" alt="Dynamic themed desktop preview 3"></td>
+    <td width="50%"><img src="assets/images/screenshot14.png" alt="Dynamic themed desktop preview 4"></td>
   </tr>
 </table>
 
@@ -35,16 +35,16 @@ For the wallpaper switcher I use ``rofi -dmenu`` and then displaying the images 
 ### A preview of the desktop as a whole
 
 <tr>
-    <td width="50%"><img src="assets/images/screenshots1.png" alt="Desktop Preview 1"></td>
-    <td width="50%"><img src="assets/images/screenshots2.png" alt="Desktop Preview 2"></td>
+    <td width="50%"><img src="assets/images/screenshot1.png" alt="Desktop Preview 1"></td>
+    <td width="50%"><img src="assets/images/screenshot2.png" alt="Desktop Preview 2"></td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/images/screenshots7.png" alt="Desktop Preview 3"></td>
-    <td width="50%"><img src="assets/images/screenshots3.png" alt="Desktop Preview 4"></td>
+    <td width="50%"><img src="assets/images/screenshot7.png" alt="Desktop Preview 3"></td>
+    <td width="50%"><img src="assets/images/screenshot3.png" alt="Desktop Preview 4"></td>
   </tr>
   <tr>
-    <td width="50%"><img src="assets/images/screenshots8.png" alt="Desktop Preview 5"></td>
-    <td width="50%"><img src="assets/images/screenshots4.png" alt="Desktop Preview 6"></td>
+    <td width="50%"><img src="assets/images/screenshot8.png" alt="Desktop Preview 5"></td>
+    <td width="50%"><img src="assets/images/screenshot4.png" alt="Desktop Preview 6"></td>
   </tr>
 </table>
 
@@ -70,7 +70,7 @@ For the ``malwareCheck.sh`` its used for arch linux scanning through your packag
 # Keybinds
 
 | KeyBinds  | Description |
-| --------- | ------------- |
+| ----------- | --------------- |
 | <kbd>SUPER</kbd> + <kbd>ENTER</kbd>  | Open Kitty  |
 | <kbd>SUPER</kbd> + <kbd>ENTER</kbd> + <kbd>SHIFT</kbd>  |  Open Floating Terminal |
 | <kbd>SUPER</kbd> + <kbd>0-9</kbd> | Move to workspace 0-9|
@@ -93,7 +93,7 @@ For the ``malwareCheck.sh`` its used for arch linux scanning through your packag
 
 I have a ``kitty`` submap which allows me to open things like ``nmtui``, ``bluetui`` and ``cava``
 
-To enter in the submap press <kbd>SUPER</kbt> + <kbd>K</kbd>, then:
+To enter in the submap press <kbd>SUPER</kbd> + <kbd>K</kbd>, then:
 * <kbd>C</kbd> For cava
 * <kbd>N</kbd> For nmtui
 * <kbd>B</kbd> For bluetui 
