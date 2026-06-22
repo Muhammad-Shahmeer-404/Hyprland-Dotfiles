@@ -1,0 +1,65 @@
+[config]
+
+[templates.waybar]
+input_path = '~/.config/matugen/template/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar' 
+
+[templates.hyprland]
+input_path = '~/.config/matugen/template/hyprland-colors.lua'
+output_path = '~/.config/hypr/colors.lua'
+post_hook = 'hyprctl reload'
+
+[templates.hyprlock]
+input_path = '~/.config/matugen/template/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.rofi]
+input_path = '~/.config/matugen/template/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+
+[templates.swaync]
+input_path = "~/.config/matugen/colors.css"
+output_path = "~/.config/swaync/colors.css"
+post_hook = 'pkill -SIGUSR2 swaync'
+
+[templates.kitty]
+input_path = '~/.config/matugen/template/kitty-colors.conf'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
+
+[templates.gtk3]
+input_path = '~/.config/matugen/template/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/template/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = '~/.config/matugen/reloadScripts/GTK-Reload.sh'
+
+[templates.wlogout]
+input_path = '~/.config/matugen/template/colors.css'
+output_path = '~/.config/wlogout/colors.css'
+
+[templates.qt5ct]
+input_path = '~/.config/matugen/template/qtct-colors.conf'
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+
+[templates.qt6ct]
+input_path = '~/.config/matugen/template/qtct-colors.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.cava]
+input_path = '~/.config/matugen/template/cava-colors.ini'
+output_path = '~/.config/cava/themes/Matugen_theme'
+post_hook = 'pkill -USR1 cava'
+
+[templates.btop]
+input_path = '~/.config/matugen/template/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
+
+[templates.zathura]
+input_path = '~/.config/matugen/template/zathura-colors'
+output_path = '~/.config/zathura/zathurarc'
