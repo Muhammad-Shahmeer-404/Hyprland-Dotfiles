@@ -1,0 +1,62 @@
+--▓   ▓ ▓▓▓ ▓   ▓ ▓▓▓▓   ▓▓▓  ▓   ▓    ▓▓▓▓  ▓   ▓ ▓     ▓▓▓▓▓  ▓▓▓▓   
+--▓░  ▓░ ▓░░▓▓  ▓░▓░░░▓ ▓ ░░▓ ▓░  ▓░   ▓░░░▓ ▓░  ▓░▓░    ▓░░░░░▓ ░░░░  
+--▓░▓ ▓░░▓░░▓░▓ ▓░▓░░░▓░▓░ ░▓░▓░▓ ▓░░  ▓▓▓▓░░▓░░ ▓░▓░░   ▓▓▓▓░░░▓▓▓░░░ 
+--▓▓░▓▓░░▓░░▓░░▓▓░▓░░ ▓░▓░░ ▓░▓▓░▓▓░░  ▓░░▓░ ▓░░ ▓░▓░░   ▓░░░░   ░░▓   
+--▓░░ ▓░▓▓▓░▓░░ ▓░▓▓▓▓ ░░▓▓▓ ░▓░░ ▓░░  ▓░░░▓░ ▓▓▓ ░▓▓▓▓▓ ▓▓▓▓▓░▓▓▓▓░░  
+-- ░░░ ░░░░░ ░░  ░░░░░░ ░ ░░░ ░░░░ ░░   ░░  ░  ░░░ ░░░░░░ ░░░░░ ░░░░ ░ 
+-- ░   ░ ░░░ ░   ░ ░░░░   ░░░  ░   ░    ░   ░  ░░░  ░░░░░ ░░░░░ ░░░░  
+
+
+local suppressMaximizeRule = hl.window_rule({
+    -- Ignore maximize requests from all apps. You'll probably like this.
+    name  = "suppress-maximize-events",
+    match = { class = ".*" },
+
+    suppress_event = "maximize",
+})
+
+hl.window_rule({
+    -- Fix some dragging issues with XWayland
+    name  = "fix-xwayland-drags",
+    match = {
+        class      = "^$",
+        title      = "^$",
+        xwayland   = true,
+        float      = true,
+        fullscreen = false,
+        pin        = false,
+    },
+
+    no_focus = true,
+})
+
+hl.window_rule ({ match = {class = "xdg-desktop-portal-gtk", title = "Open Folder"}, center  = true, size    = {"(monitor_w*0.5)", "(monitor_h*0.5)"}, float = true,})
+hl.window_rule ({ match = {title = "nmtui"}, center  = true, size    = {"(monitor_w*0.5)", "(monitor_h*0.5)"}, float = true,})
+hl.window_rule ({ match = {title = "cava"}, center  = true, size    = {"(monitor_w*0.5)", "(monitor_h*0.5)"}, float = true,})
+hl.window_rule ({ match = {title = "float"}, center  = true, size    = {"(monitor_w*0.5)", "(monitor_h*0.5)"}, float = true,})
+hl.window_rule ({ match = {title = "bluetui"}, center  = true, size    = {"(monitor_w*0.7)", "(monitor_h*0.7)"}, float = true,})
+hl.window_rule ({ match = {class = "org.kde.ark"} , center = true, float = true, size = {"(monitor_w*0.7)", "(monitor_h*0.7)"},})
+
+--floating Windows size
+hl.window_rule ({ match = {float = true}, center = true, size = {"(monitor_w*0.5)", "(monitor_h*0.5)"}})
+
+-- Hyprland-run windowrule
+hl.window_rule({
+    name  = "move-hyprland-run",
+    match = { class = "hyprland-run" },
+
+    move  = "20 monitor_h-120",
+    float = true,
+})
+
+--▓      ▓▓▓  ▓   ▓ ▓▓▓▓▓ ▓▓▓▓   ▓▓▓▓    ▓▓▓▓  ▓   ▓ ▓     ▓▓▓▓▓  ▓▓▓▓   
+--▓░    ▓ ░░▓  ▓ ▓ ░▓░░░░░▓░░░▓ ▓ ░░░░   ▓░░░▓ ▓░  ▓░▓░    ▓░░░░░▓ ░░░░  
+--▓░░   ▓▓▓▓▓░  ▓ ░ ▓▓▓▓░░▓▓▓▓░░ ▓▓▓░░░  ▓▓▓▓░░▓░░ ▓░▓░░   ▓▓▓▓░░░▓▓▓░░░ 
+--▓░░   ▓░░░▓░░ ▓░ ░▓░░░░ ▓░░▓░ ░ ░░▓    ▓░░▓░ ▓░░ ▓░▓░░   ▓░░░░   ░░▓   
+--▓▓▓▓▓ ▓░░░▓░░ ▓░░ ▓▓▓▓▓░▓░░░▓░▓▓▓▓░░   ▓░░░▓░ ▓▓▓ ░▓▓▓▓▓ ▓▓▓▓▓░▓▓▓▓░░  
+-- ░░░░░ ░░  ░░  ░░  ░░░░░ ░░  ░ ░░░░ ░   ░░  ░  ░░░ ░░░░░░ ░░░░░ ░░░░ ░ 
+--  ░░░░░ ░   ░   ░   ░░░░░ ░   ░ ░░░░     ░   ░  ░░░  ░░░░░ ░░░░░ ░░░░  
+
+
+hl.layer_rule({ match = {namespace = "swaync-control-center"}, blur = true, ignore_alpha = 0.5})
+
