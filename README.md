@@ -75,9 +75,9 @@ Unfortunately as of right now I dont have a installer script for the rice but ho
 | <kbd>SUPER</kbd> + <kbd>ENTER</kbd> + <kbd>SHIFT</kbd>  |  Open Floating Terminal |
 | <kbd>SUPER</kbd> + <kbd>0-9</kbd> | Move to workspace 0-9|
 | <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>0-9</kbd> | Move Active Window to Workspace 0-9|
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>U</kbd>   | Open and exist spacial Workspace |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>U</kbd>   | Open and exist special Workspace |
 | <kbd>ALT</kbd>   + <kbd>TAB</kbd> | Cycle to next window |
-| <Kbs>SUPER</kbd> + <kbd>TAB</kbd> | Shift places with the next window |
+| <kbd>SUPER</kbd> + <kbd>TAB</kbd> | Shift places with the next window |
 | <kbd>SUPER</kbd> + <kbd>E</kbd> | Open File manager  |
 | <kbd>SUPER</kbd> + <kbd>B</kde> | Open browser |
 | <kbd>SUPER</kbd> + <kbd>D</kbd> | Open appication Launcher |
