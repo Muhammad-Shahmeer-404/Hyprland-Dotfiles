@@ -1,0 +1,11 @@
+@import "colors.rasi"
+
+configuration {
+    font: "JetBrainsMono Nerd Font bold 10 ";
+    display-drun: "Application";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+@theme "~/.config/rofi/theme.rasi"
+

@@ -1,0 +1,103 @@
+@import "colors.rasi" 
+
+* {
+    background-color: transparent;
+}
+element {
+    padding: 7px 0px 7px 5px ;
+    spacing: 5px ;
+    border:  0;
+    cursor:  pointer;
+}
+
+element normal.normal {
+    background-color: @on-secondary;
+    text-color:       @primary;
+}
+
+element alternate.normal {
+    background-color: @on-secondary;
+    text-color:       @primary;
+}
+
+element-text.selected,
+element selected 
+{
+    background-color: @primary;
+    text-color:       @on-secondary-fixed;
+    border-radius:    3px;
+}
+
+
+element-text {
+    background-color: @on-secondary;
+    text-color:       inherit;
+    cursor:           inherit;
+}
+element-icon {
+    background-color: transparent;
+    size:             1.25em ;
+    text-color:       inherit;
+    cursor:           inherit;
+}
+window {
+    width: 30%;
+    background-color: @on-secondary;
+    border-radius: 5px; 
+}
+mainbox {
+    border-color: @primary;
+    padding: 3px;
+    border: 3px solid;
+    orientation:  vertical;
+}
+
+
+message {
+    padding:      0px ;
+    border-color: @error;
+    border:       2px solid 0px 0px ;
+}
+
+textbox {
+    
+    text-color: @primary;
+}
+listview {
+    cycle:        true;
+    scrollbar:    false;
+    border-color: @secondary;
+    columns:      1;
+    spacing:      2.5px ;
+    padding:      10px 0px 0px 0px;
+    lines:        8;
+    border:       1.5px solid 0px 0px;
+}
+inputbar {
+    border-radius: 2px 2px 0px 0px;
+    background-color: @inverse-primary;
+    padding:    1px;
+    spacing:    0px;
+    children:   [ prompt,textbox-prompt-colon ,entry];
+}
+
+entry {
+    background-color: @inverse-primary;
+    padding:          7px;
+    spacing:          0;
+    text-color:       @primary;
+    cursor:           text;
+}
+prompt {
+    background-color: @inverse-primary;
+    padding: 7px 0px 0px 7px;
+    spacing:    0;
+    text-color: @secondary-fixed-dim;
+}
+textbox-prompt-colon {
+    background-color: @inverse-primary;
+    margin:     7px 0px 0px 0px;
+    expand:     false;
+    str:        ":";
+    text-color: @secondary;
+}
