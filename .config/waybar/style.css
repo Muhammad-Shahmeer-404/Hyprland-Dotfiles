@@ -1,0 +1,175 @@
+@import '/home/shahmeer/.config/waybar/colors.css';
+
+* {
+    border: none;
+    all: unset;
+    font-family: 'Jetbrains Mono Nerd Font Propo', monospace;
+}
+
+window#waybar 
+{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: @primary;
+    border-radius: 0 ; 
+}
+
+tooltip
+{
+    background-color: @on_secondary;
+    border-radius: 5px;
+    border: 1.5px solid @no_background;
+}
+
+tooltip label 
+{
+    color: @primary;
+}
+
+.modules-right {
+    margin-right: 12px;
+}
+.modules-left {
+    margin-left: 12px;
+}
+
+#audio,
+#network,
+#power-profiles-daemon,
+#battery,
+#backlight{
+    border: 1.5px solid @primary;
+    margin: 0px 0px 0px 7.5px;
+    border-radius: 5px;
+    background-color: @on_secondary;
+}
+
+
+#bluetooth{
+    font-weight: bold;
+    min-width: 15px;
+    padding: 0px 8px 0px 0px;
+}
+
+#power-profiles-daemon
+{
+    min-width: 15px;
+    padding: 0px 8px 0px 8px;
+}
+
+#battery
+{
+    min-width: 35px;
+    padding: 0px 8px 0px 8px;
+}
+
+#network
+{
+    font-weight: bold;
+    padding: 0px 10px 0px 10px ;
+}
+
+#pulseaudio
+{
+    font-weight: bold;
+    min-width: 17px ;
+    padding: 0px 8px 0px 8px;
+}
+
+#backlight
+{
+    font-weight: bold;
+    min-width: 17px;
+    padding: 0px 8px 0px 8px;
+}
+
+#memoryInfo,
+#MediaPlayer,
+#clock{ 
+    border: 1.5px solid @primary;
+    border-radius: 5px;
+    background-color: @on_secondary;
+}
+
+
+#memoryInfo{
+    font-weight: bold;
+    padding: 0px 8px 0px 8px;
+}
+
+#memory
+{
+    margin-left: 5px;
+}
+
+#MediaPlayer
+{
+    margin: 0px 8px;
+}
+
+#mpris
+{
+    font-weight: bold;
+    padding: 0px 8px 0px 5px
+}
+
+#clock
+{
+    font-weight: bold;
+    padding: 0px 8px 0px 8px
+}
+
+#cava
+{
+    font-size: 0.7rem;
+    letter-spacing: 0.25px;
+    padding: 0px 8px 0px 7px;
+}
+
+#custom-swaync
+{
+    border-radius: 7px;
+    background-color: @on_secondary;
+    margin: 0px 7px 0px 0px;
+    min-width: 17px ;
+    padding: 0px 8px 0px 8px;
+    font-size: 1rem;
+}
+
+#workspaces,
+#custom-swaync
+{
+    border: 1.5px solid @primary;
+}
+
+
+#workspaces
+{
+    margin: 0px 45px 0px 0px;
+    border-radius: 7px;
+    background-color: @on_secondary;
+    padding: 6px 4px 6px 4px;
+}
+
+#workspaces button
+{
+    background-color: @on_secondary_fixed_variant;
+    font-size: .9rem;
+    min-width: 20px;
+    transition: all 200ms ease-in-out;
+    border-radius: 7px;
+    margin: 0px 2px;
+    color: transparent;
+    padding: 0px 5px;
+    border: 1px solid @on_secondary;
+}
+
+#workspaces button.active
+{
+    border-radius: 5px;
+    min-width: 45px;
+    background-color: @on_background;
+    color: @on_secondary;
+    font-weight: bold;
+}
