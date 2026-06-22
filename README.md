@@ -63,8 +63,8 @@ Unfortunately as of right now I dont have a installer script for the rice but ho
 * zen browser
 * hyprshot
 
-[!NOTE]
-For the ``malwareCheck.sh`` its used for arch linux scanning through your packages and giving you a list of packages infected. I would also like to note that I am not the creater of the script but it from a [Reddit Post](https://www.reddit.com/r/linuxmemes/comments/1u9cilx/is_it_safe_to_update_yet/)
+>[!NOTE]
+>For the ``malwareCheck.sh`` its used for arch linux scanning through your packages and giving you a list of packages infected. I would also like to note that I am not the creater of the script but it from a [Reddit Post](https://www.reddit.com/r/linuxmemes/comments/1u9cilx/is_it_safe_to_update_yet/)
 
 
 # Keybinds
